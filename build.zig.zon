@@ -1,0 +1,18 @@
+.{
+    .name = "libmaxminddb",
+    .version = "1.10.0",
+    .minimum_zig_version = "0.13.0",
+    .dependencies = .{
+        .libmaxminddb = .{
+            .url = "https://github.com/maxmind/libmaxminddb/archive/a4fa79d.tar.gz",
+            .hash = "12209bf226146a798b82dc665b23d64b9c840b1c9432825e0c4a1274d6a0de78371e",
+        },
+    },
+    .paths = .{
+        "src/",
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
