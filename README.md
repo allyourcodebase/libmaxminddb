@@ -20,8 +20,8 @@ const libmaxminddb_dep = b.dependency("libmaxminddb", .{
     .target = target,
     .optimize = optimize,
 });
-const mmdb_mod = libmaxminddb_dep.module("mmdb");
-<compile>.root_module.addImport("mmdb", mmdb_mod);
+const maxminddb_mod = libmaxminddb_dep.module("maxminddb");
+<compile>.root_module.addImport("maxminddb", maxminddb_mod);
 ```
 
 <!-- MARKDOWN LINKS -->

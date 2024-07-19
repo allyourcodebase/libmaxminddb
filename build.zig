@@ -15,7 +15,7 @@ pub fn build(b: *std.Build) void {
     const lib_step = b.step("lib", "Install library");
 
     const lib = b.addStaticLibrary(.{
-        .name = "mmdb",
+        .name = "maxminddb",
         .target = target,
         .version = version,
         .optimize = optimize,
@@ -39,7 +39,7 @@ pub fn build(b: *std.Build) void {
     b.default_step.dependOn(lib_step);
 
     // Bindings module
-    const mod = b.addModule("mmdb", .{
+    const mod = b.addModule("maxminddb", .{
         .target = target,
         .optimize = optimize,
         .root_source_file = root_source_file,
