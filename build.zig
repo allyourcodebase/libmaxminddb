@@ -74,6 +74,8 @@ const FLAGS = .{
     "-std=c99",
     "-O2",
     "-g",
+    "-fsanitize=undefined",
+    "-fsanitize-trap=undefined",
 };
 
 const VALUES = .{
